@@ -1,0 +1,5 @@
+<div class="product">
+    <p class="product__title">{{ product.title }}</p>
+    <img class="product__image" src="{{ product.image }}" alt=""> 
+    <p class="product__price">{{ product.price | currency:'BRL' :symbolDisplay:'.2-2' }}</p>
+</div>
