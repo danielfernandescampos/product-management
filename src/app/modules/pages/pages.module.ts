@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { ProductCardComponent } from './products/product-card/product-card.component';
 import { CashFlowComponent } from './cash-flow/cash-flow-page/cash-flow.component';
 import { StoragePageComponent } from './storage/storage-page/storage-page.component';
+import { StorageCardComponent } from './storage/storage-card/storage-card.component';
 
 
 
@@ -14,7 +15,8 @@ import { StoragePageComponent } from './storage/storage-page/storage-page.compon
     ProductsPageComponent,
     ProductCardComponent,
     CashFlowComponent,
-    StoragePageComponent
+    StoragePageComponent,
+    StorageCardComponent
   ],
   imports: [
     CommonModule,

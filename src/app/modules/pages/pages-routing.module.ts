@@ -1,11 +1,15 @@
+import { CashFlowComponent } from './cash-flow/cash-flow-page/cash-flow.component';
+import { StoragePageComponent } from './storage/storage-page/storage-page.component';
 import { ProductsPageComponent } from './products/products-page/products-page.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: "", component: ProductsPageComponent },
-  { path: "**", redirectTo: "" },
+  { path: "products", component: ProductsPageComponent },
+  { path: "storage", component: StoragePageComponent },
+  { path: "cashflow", component: CashFlowComponent },
+  { path: "**", redirectTo: "storage" },
 ];
 
 @NgModule({

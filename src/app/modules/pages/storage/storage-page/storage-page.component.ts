@@ -1,4 +1,6 @@
+import { Product } from './../../../../core/interfaces/product';
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from 'src/app/core/http/http.service';
 
 @Component({
   selector: 'app-storage-page',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StoragePageComponent implements OnInit {
 
-  constructor() { }
+  products: Product[];
+
+  constructor(private httpService: HttpService) { }
 
   ngOnInit() {
+    this.httpService.listProducts()
+    .subscribe(data => {this.products = data ;})
   }
 
 }

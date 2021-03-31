@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     transition: .2s;
-    box-shadow: 3px 2px 8px 2px #c4c4c4;
+    box-shadow: 3px 2px 8px 2px #00000048;
     position: fixed;
     z-index: 1;    
 }
@@ -26,14 +26,20 @@
         padding: 0 20px;
         line-height: 50px;
         cursor: pointer;
-        border-right: 1px solid rgb(212, 212, 212);
+        border-left: 1px solid rgb(228, 228, 228);
         background-color: rgb(240, 240, 240);
         transition: .1s;
+        outline: none;
         //box-shadow:  4px 0px 6px #e6e6e6;
+
+        &--active {
+            box-shadow:  5px 0px 10px #d9d9d9,
+             -5px -5px 10px #ffffff;
+        }
 
         &:hover {
             background-color: rgb(235, 235, 235);
-            box-shadow:  5px 5px 10px #d9d9d9,
+            box-shadow:  5px 0px 10px #d9d9d9,
              -5px -5px 10px #ffffff;
         }
 
