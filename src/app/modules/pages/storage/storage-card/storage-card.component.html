@@ -1,10 +1,13 @@
 <div class="product">
-    <p class="product__title">{{ product.title }}</p>
+    <img class="product__image" src="{{ product.image }}" alt="">
     <div class="product__container">
-        <img class="product__image" src="{{ product.image }}" alt="">
+        <div class="product__info">
+            <p class="product__title">{{ product.title }}</p>
+            <p class="product__stock">Stock: {{ random() }} un</p>
+        </div>
         <div class="product__button-container">
-            <button class="product__button">Buy</button>
-            <button class="product__button">Sell</button>
+            <button class="product__button button--buy">Buy</button>
+            <button class="product__button button--sell">Sell</button>
         </div>     
     </div>
 </div>

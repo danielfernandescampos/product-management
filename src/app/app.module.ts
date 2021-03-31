@@ -18,6 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     PagesModule,
     HttpClientModule
   ],
+  exports: [
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

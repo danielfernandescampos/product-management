@@ -15,4 +15,9 @@ export class StorageCardComponent implements OnInit {
   ngOnInit() {
   }
 
+  random(){
+    const randomNumber = Math.floor(Math.random() * 100)
+    return randomNumber
+  }
+
 }

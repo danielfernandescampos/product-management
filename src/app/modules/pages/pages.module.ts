@@ -1,3 +1,4 @@
+import { SharedModule } from './../../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { PagesRoutingModule } from './pages-routing.module';
 import { ProductsPageComponent } from './products/products-page/products-page.component';
@@ -16,12 +17,13 @@ import { StorageCardComponent } from './storage/storage-card/storage-card.compon
     ProductCardComponent,
     CashFlowComponent,
     StoragePageComponent,
-    StorageCardComponent
+    StorageCardComponent,
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
     RouterModule,
+    SharedModule
   ]
 })
 export class PagesModule { }

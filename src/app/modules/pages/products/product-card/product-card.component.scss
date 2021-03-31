@@ -12,10 +12,6 @@
              -5px -5px 8px #ffffff;
     transition: .2s;
 
-    &:hover {
-        transform: scale(1.001);
-    }
-
     &__title{
         font-size: 1.1rem;;
         font-weight: bold;
@@ -38,6 +34,7 @@
     }
 
     &__button {
+        color: grey;
         margin: 15px;
         border: none;
         border-radius: 10px;
@@ -46,7 +43,7 @@
         height: 45px;
         background-color: rgb(247, 247, 247);
         cursor: pointer;
-        transition: .1s;
+        transition: .08s;
         box-shadow:  4px 4px 6px #ebebeb,
              -4px -4px 6px #ffffff;
     
@@ -55,3 +52,12 @@
         }
     }
 }
+
+.button--delete{
+    color: rgb(196, 119, 96);
+    border: 1px solid rgba(196, 119, 96, 0.253);
+    &:hover {
+        background-color: rgb(196, 119, 96, .08);
+    }
+}
+
