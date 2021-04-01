@@ -15,7 +15,7 @@ export class StoragePageComponent implements OnInit {
 
   ngOnInit() {
     this.httpService.listProducts()
-    .subscribe(data => {this.products = data ;})
+    .subscribe(data => {this.products = data})
   }
 
 }

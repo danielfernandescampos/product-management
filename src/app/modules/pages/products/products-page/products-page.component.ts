@@ -9,15 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsPageComponent implements OnInit {
 
-  //products$: Observable<Product[]>;
   products: Product[];
 
   constructor(private httpService: HttpService) { }
 
   ngOnInit() {
-    //this.products$ = this.httpService.listProducts();
     this.httpService.listProducts()
-    .subscribe(data => {this.products = data ;})
+    .subscribe(data => {
+      this.products = data; 
+    })
   }
 
 }

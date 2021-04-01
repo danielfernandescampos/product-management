@@ -8,6 +8,9 @@ import { ProductCardComponent } from './products/product-card/product-card.compo
 import { CashFlowComponent } from './cash-flow/cash-flow-page/cash-flow.component';
 import { StoragePageComponent } from './storage/storage-page/storage-page.component';
 import { StorageCardComponent } from './storage/storage-card/storage-card.component';
+import { ProductFormComponent } from './products/product-form/product-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { StorageModalComponent } from './storage/storage-modal/storage-modal.component';
 
 
 
@@ -18,12 +21,15 @@ import { StorageCardComponent } from './storage/storage-card/storage-card.compon
     CashFlowComponent,
     StoragePageComponent,
     StorageCardComponent,
+    ProductFormComponent,
+    StorageModalComponent,
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ]
 })
 export class PagesModule { }

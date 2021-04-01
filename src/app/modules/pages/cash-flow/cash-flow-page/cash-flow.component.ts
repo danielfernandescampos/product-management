@@ -1,4 +1,6 @@
+import { CashFlow } from './../../../../core/interfaces/cash-flow';
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from 'src/app/core/http/http.service';
 
 @Component({
   selector: 'app-cash-flow',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CashFlowComponent implements OnInit {
 
-  constructor() { }
+  cashFlow: CashFlow[];
+
+  constructor(private httpService: HttpService) { }
 
   ngOnInit() {
+    this.httpService.listCashFlow()
+      .subscribe(data => this.cashFlow = data)
   }
 
 }

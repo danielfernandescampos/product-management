@@ -1,0 +1,30 @@
+.flow-list{
+    padding-top: 70px;
+    width: 1200px;
+    margin: auto;
+    font-family: sans-serif;
+    color: rgb(88, 88, 88);
+}
+
+table {
+    width: 100%
+}
+
+th {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+td, th {
+    text-align: left;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding: 15px 5px;
+}
+
+.flow-sell{
+    background-color: rgba(236, 179, 125, 0.089);
+}
+
+.flow-buy{
+    background-color: rgba(5, 196, 21, 0.041);
+}

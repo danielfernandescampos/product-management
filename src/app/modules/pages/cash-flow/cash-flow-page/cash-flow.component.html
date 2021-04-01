@@ -1,1 +1,22 @@
-<p>cash-flow works!</p>
+<div class="flow-list">
+    <table class="cash-flow">
+        <tr>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Quant</th>
+            <th>Valor</th>
+            <th>Data</th>
+        </tr>
+        <tr *ngFor="let item of cashFlow"
+            [ngClass]="{
+                'flow-sell': item.tipo === 'venda',
+                'flow-buy': item.tipo === 'compra'
+            }"  >
+            <td>{{ item.nome }}</td>
+            <td>{{ item.tipo }}</td>
+            <td>{{ item.quant }}</td>
+            <td>{{ item.valor | currency:'BRL':'symbol':'.2-2' }}</td>
+            <td>{{ item.data }}</td>
+        </tr>
+    </table>
+</div>

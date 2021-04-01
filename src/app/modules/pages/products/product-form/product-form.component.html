@@ -1,0 +1,22 @@
+<form [formGroup]="form" class="product-form">
+    <label for="image">Foto:</label>
+    <input 
+        type="file" 
+        id="image"
+        formControlName="foto"
+        (change)="onChange($event)"
+        > <br><br>
+    <label for="nome">Nome:</label>
+    <input 
+        type="text" 
+        id="nome"
+        formControlName="nome"> <br><br>
+    <label for="categ">Categoria:</label>
+    <input 
+        type="text" 
+        id="categ"
+        formControlName="categ"> <br><br>
+        <button (click)="onSubmit()">Salvar</button>
+        <button (click)="onCancel()">Cancelar</button>
+        <button (click)="upload()">Upload</button>
+</form>

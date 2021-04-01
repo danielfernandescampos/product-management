@@ -1,10 +1,10 @@
 <div class="product">
-    <p class="product__title">{{ product.title }}</p>
+    <p class="product__title">{{ product.nome }}</p>
     <div class="product__container">
-        <img class="product__image" src="{{ product.image }}" alt="">
+        <img class="product__image" src="{{ product.foto }}" alt="">
         <div class="product__button-container">
-            <button class="product__button">Edit</button>
-            <button class="product__button button--delete">Delete</button>
+            <button class="product__button" (click)="onEdit(product.id)">Edit</button>
+            <button class="product__button button--delete" (click)="onDelete(product.id)">Delete</button>
         </div>     
     </div>
 </div>
