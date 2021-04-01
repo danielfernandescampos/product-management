@@ -1,3 +1,5 @@
+import { StorageService } from './../../storage/storage.service';
+import { ModalProductService } from './modal-product.service';
 import { Product } from './../../../../core/interfaces/product';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -10,43 +12,45 @@ import { HttpService } from 'src/app/core/http/http.service';
 })
 export class ProductFormComponent implements OnInit {
 
+  modalVisible: boolean = true;
   form: FormGroup;
   file: File;
+  product: Product;
 
   constructor(
     private formBuilder: FormBuilder,
-    private httpService: HttpService
+    private httpService: HttpService,
+    private modalService: ModalProductService,
+    private storageService: StorageService
     ) { }
 
   ngOnInit() {
 
+    this.storageService.currentSelectedProduct.subscribe(prod => this.product = prod)
+
+    this.modalService.currentModalVisibility.subscribe(bool => this.modalVisible = bool)
+
     this.form = this.formBuilder.group({
       nome: [null, [Validators.required]],
       categ: [null, [Validators.required]],
-      foto: [''],
+      //foto: [''],
     })
   }
 
   onSubmit(){
-    /*console.log(this.form.value)
     if(this.form.valid){
-      this.httpService.creatProduct(this.form.value).subscribe(
-        success => alert('Produto criado com sucesso'),
-        error => alert(error),
-        () => console.log('completo')
-      )
       let produto: Product = {
         id: this.product.id,
-        nome: 'string',
-        categ: this.product.categ,
+        nome: this.form.value.nome,
+        categ: this.form.value.categ,
         foto: this.product.foto,
         quant: this.product.quant
       }
       this.httpService.editProduct(this.product.id, produto).subscribe(
-        success => console.log('sucesso'),
+        success => {console.log('sucesso'); document.location.reload()},
         error => console.log(error)
       )
-    }*/
+    }
   }
 
   onChange(event){
@@ -56,7 +60,7 @@ export class ProductFormComponent implements OnInit {
 
   onCancel(){
     this.form.reset();
-    console.log('cancelou')
+    this.modalService.changeModalVisibility(false)
   }
 
 }

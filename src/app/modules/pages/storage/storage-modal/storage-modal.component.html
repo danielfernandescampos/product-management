@@ -3,12 +3,34 @@
        <img class="modal__img" src="{{ product.foto }}" alt="">
        <p class="modal__name">{{ product.nome }}</p>
        <div class="modal__input-container">
-           <label class="modal__label" for="valor">Valor:</label>
-           <input class="modal__input" placeholder="R$ 0,00" type="number" min="0" id="valor" formControlName="valor">
+           <label 
+                class="modal__label" 
+                for="valor">
+                Valor:
+            </label>
+           <input 
+                class="modal__input" 
+                placeholder="R$ 0,00" 
+                type="number" 
+                min="0" 
+                id="valor" 
+                formControlName="valor"
+            >
        </div>
        <div class="modal__input-container">
-           <label class="modal__label" for="quant">Quant:</label>
-           <input class="modal__input" placeholder="0 un" type="number" min="0" id="quant" formControlName="quant">
+           <label 
+                class="modal__label" 
+                for="quant">
+                Quant:
+            </label>
+           <input 
+                class="modal__input" 
+                placeholder="0 un" 
+                type="number" 
+                min="0" 
+                id="quant" 
+                formControlName="quant"
+            >
        </div>
        <button class="modal__btn" (click)="submit">{{operation.txtBtn}}</button>
        <button class="modal__btn btn--cancel" (click)="onClose()">Cancelar</button>

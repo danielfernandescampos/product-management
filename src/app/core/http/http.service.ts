@@ -21,11 +21,7 @@ export class HttpService {
     return this.http.get<CashFlow[]>(this.API_CAHSFLOW)
   }
 
-  buyProduct(cashFlow: CashFlow) {
-    return this.http.post(this.API_CAHSFLOW, cashFlow)
-  }
-
-  sellProduct(cashFlow: CashFlow) {
+  buyOrSellProduct(cashFlow: CashFlow) {
     return this.http.post(this.API_CAHSFLOW, cashFlow)
   }
 
@@ -41,13 +37,13 @@ export class HttpService {
     return this.http.delete(`${this.API_PRODUCTS}/${id}`)
   }
 
-  onUpload(file: File, url: string) {
+  /*onUpload(file: File, url: string) {
 
     const formData = new FormData();
     formData.append('file', file, file.name)
 
     const request = new HttpRequest('POST', url, formData);
     return this.http.request(request);
-  }
+  }*/
 
 }

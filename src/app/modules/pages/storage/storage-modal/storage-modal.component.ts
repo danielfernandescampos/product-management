@@ -34,12 +34,13 @@ export class StorageModalComponent implements OnInit {
 
     this.form = this.formBuilder.group({
       valor: [null, Validators.required],
-      quant: [null, Validators.required]
+      quant: [null, [Validators.required]]
     })
   }
 
   onClose() {
-    this.modalService.changeModalVisibility(false)
+    this.modalService.changeModalVisibility(false);
+    this.form.reset();
   }
 
   onSubmit() {
@@ -63,7 +64,7 @@ export class StorageModalComponent implements OnInit {
         valor: this.form.value.valor,
       }
     
-      this.httpService.buyProduct(cashFlow).subscribe(
+      this.httpService.buyOrSellProduct(cashFlow).subscribe(
         success => console.log('sucesso'),
         error => console.log(error),
         () => console.log('request completo')

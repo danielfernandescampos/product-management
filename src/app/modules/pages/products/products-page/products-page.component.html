@@ -1,12 +1,11 @@
-
 <div class="product-list">
-
     <!--button routerLink="/novo">Novo</button-->
-
     <app-product-card 
     *ngFor="let product of products" 
     [product]="product">
     </app-product-card>
 </div>
+
+<app-product-form></app-product-form>
 
 <app-spinner *ngIf="products==null" ></app-spinner>

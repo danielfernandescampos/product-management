@@ -12,7 +12,7 @@
       "nome": "Batata",
       "categ": "Legume",
       "foto": "../../../../../assets/img/products/batata-inglesa.png",
-      "quant": 78
+      "quant": 45
     },
     {
       "id": "07",
@@ -147,6 +147,50 @@
       "foto": "../../../../../assets/img/products/alho.png",
       "quant": 17,
       "tipo": "compra",
+      "data": "01/04/2021",
+      "valor": 5
+    },
+    {
+      "id": "02-Thu Apr 01 2021 17:29:14 GMT-0300 (Horário Padrão de Brasília)",
+      "product_id": "02",
+      "nome": "Abóbora",
+      "categ": "Legume",
+      "foto": "../../../../../assets/img/products/abobora.png",
+      "quant": 1,
+      "tipo": "venda",
+      "data": "01/04/2021",
+      "valor": 5
+    },
+    {
+      "id": "02-Thu Apr 01 2021 17:29:39 GMT-0300 (Horário Padrão de Brasília)",
+      "product_id": "02",
+      "nome": "Abóbora",
+      "categ": "Legume",
+      "foto": "../../../../../assets/img/products/abobora.png",
+      "quant": -1,
+      "tipo": "venda",
+      "data": "01/04/2021",
+      "valor": 5
+    },
+    {
+      "id": "05-Thu Apr 01 2021 17:38:13 GMT-0300 (Horário Padrão de Brasília)",
+      "product_id": "05",
+      "nome": "Batata",
+      "categ": "Legume",
+      "foto": "../../../../../assets/img/products/batata-inglesa.png",
+      "quant": 8,
+      "tipo": "venda",
+      "data": "01/04/2021",
+      "valor": 5
+    },
+    {
+      "id": "05-Thu Apr 01 2021 18:51:17 GMT-0300 (Horário Padrão de Brasília)",
+      "product_id": "05",
+      "nome": "Batata",
+      "categ": "Legume",
+      "foto": "../../../../../assets/img/products/batata-inglesa.png",
+      "quant": 25,
+      "tipo": "venda",
       "data": "01/04/2021",
       "valor": 5
     }
