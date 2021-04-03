@@ -6,6 +6,6 @@
     </app-product-card>
 </div>
 
-<app-product-form></app-product-form>
+<app-product-form *ngIf="modalVisible"></app-product-form>
 
 <app-spinner *ngIf="products==null" ></app-spinner>

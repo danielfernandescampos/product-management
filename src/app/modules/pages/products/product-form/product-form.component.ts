@@ -12,7 +12,6 @@ import { HttpService } from 'src/app/core/http/http.service';
 })
 export class ProductFormComponent implements OnInit {
 
-  modalVisible: boolean = true;
   form: FormGroup;
   file: File;
   product: Product;
@@ -21,18 +20,18 @@ export class ProductFormComponent implements OnInit {
     private formBuilder: FormBuilder,
     private httpService: HttpService,
     private modalService: ModalProductService,
-    private storageService: StorageService
+    private storageService: StorageService,
     ) { }
 
   ngOnInit() {
 
-    this.storageService.currentSelectedProduct.subscribe(prod => this.product = prod)
+    this.storageService.currentSelectedProduct.subscribe(prod => this.product = prod);
 
-    this.modalService.currentModalVisibility.subscribe(bool => this.modalVisible = bool)
+    console.log('oi')
 
     this.form = this.formBuilder.group({
-      nome: [null, [Validators.required]],
-      categ: [null, [Validators.required]],
+      nome: [this.product.nome, [Validators.required]],
+      categ: [this.product.categ, [Validators.required]],
       //foto: [''],
     })
   }
