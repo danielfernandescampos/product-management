@@ -2,7 +2,6 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ConfirmModalComponent } from './components/modal/confirm-modal/confirm-modal.component';
-import { EditComponent } from './components/modal/edit/edit.component';
 
 
 
@@ -10,7 +9,6 @@ import { EditComponent } from './components/modal/edit/edit.component';
   declarations: [
     SpinnerComponent, 
     ConfirmModalComponent, 
-    EditComponent
   ],
   imports: [
     CommonModule
@@ -18,7 +16,6 @@ import { EditComponent } from './components/modal/edit/edit.component';
   exports: [
     SpinnerComponent,
     ConfirmModalComponent, 
-    EditComponent
   ],
   entryComponents: [
     ConfirmModalComponent
