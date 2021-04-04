@@ -11,6 +11,7 @@ import { StorageCardComponent } from './storage/storage-card/storage-card.compon
 import { ProductFormComponent } from './products/product-form/product-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { StorageModalComponent } from './storage/storage-modal/storage-modal.component';
+import { ProductFormCreateComponent } from './products/product-form/product-form-create/product-form-create.component';
 
 
 
@@ -23,6 +24,7 @@ import { StorageModalComponent } from './storage/storage-modal/storage-modal.com
     StorageCardComponent,
     ProductFormComponent,
     StorageModalComponent,
+    ProductFormCreateComponent,
   ],
   imports: [
     CommonModule,

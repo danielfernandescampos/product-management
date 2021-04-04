@@ -25,9 +25,7 @@ export class ProductFormComponent implements OnInit {
 
   ngOnInit() {
 
-    this.storageService.currentSelectedProduct.subscribe(prod => this.product = prod);
-
-    console.log('oi')
+    this.storageService.currentSelectedProduct.subscribe(prod => {this.product = prod; console.log(prod)});
 
     this.form = this.formBuilder.group({
       nome: [this.product.nome, [Validators.required]],

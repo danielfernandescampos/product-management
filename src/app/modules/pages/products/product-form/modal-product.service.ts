@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ModalProductService {
 
-  private modalVisibility = new BehaviorSubject<boolean>(false);
+  private modalVisibility = new Subject<boolean>();
   currentModalVisibility = this.modalVisibility.asObservable();
 
   constructor() { }

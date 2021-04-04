@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+import { EventEmitter } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-confirm-modal',
@@ -7,8 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ConfirmModalComponent implements OnInit {
 
-  @Input() title: string;
-  @Input() message: string;
+  title: string;
+  message: string;
+
+  //@Output() close = new EventEmitter();
 
   constructor() { }
 
@@ -16,6 +19,8 @@ export class ConfirmModalComponent implements OnInit {
   }
 
   onClose() {
+    console.log('close')
+    //this.close.emit(null)
   }
 
 }

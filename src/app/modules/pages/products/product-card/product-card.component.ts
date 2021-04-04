@@ -27,7 +27,7 @@ export class ProductCardComponent implements OnInit {
     if(res == true) {
       this.httpService.deleteProduct(this.product.id).subscribe(
         success => {alert('Produto excluído com sucesso'); document.location.reload()},
-          error => alert(error)
+        error => alert(error)
       );
     }
   }

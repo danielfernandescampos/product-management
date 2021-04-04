@@ -1,3 +1,5 @@
+import { ProductFormCreateComponent } from './modules/pages/products/product-form/product-form-create/product-form-create.component';
+import { ConfirmModalComponent } from './shared/components/modal/confirm-modal/confirm-modal.component';
 import { PagesModule } from './modules/pages/pages.module';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
   exports: [
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ConfirmModalComponent, ProductFormCreateComponent]
 })
 export class AppModule { }

@@ -2,6 +2,6 @@ export interface Product {
     id: number;
     nome: string;
     categ: string;
-    foto: string;
+    foto: any;
     quant: number;
 }

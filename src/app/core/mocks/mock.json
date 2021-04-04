@@ -5,21 +5,21 @@
       "nome": "Abóbora",
       "categ": "Legume",
       "foto": "../../../../../assets/img/products/abobora.png",
-      "quant": 1
+      "quant": 50
     },
     {
       "id": "05",
       "nome": "Batata",
       "categ": "Legume",
       "foto": "../../../../../assets/img/products/batata-inglesa.png",
-      "quant": 45
+      "quant": 65
     },
     {
       "id": "07",
       "nome": "Cebola",
       "categ": "Legume",
       "foto": "../../../../../assets/img/products/cebola.png",
-      "quant": 93
+      "quant": 100
     },
     {
       "id": "11",
@@ -40,7 +40,7 @@
       "nome": "Rúcula",
       "categ": "Verdura",
       "foto": "../../../../../assets/img/products/rucula.png",
-      "quant": 0
+      "quant": 21
     },
     {
       "id": "20",
@@ -193,6 +193,83 @@
       "tipo": "venda",
       "data": "01/04/2021",
       "valor": 5
+    },
+    {
+      "id": "02-Sat Apr 03 2021 19:04:41 GMT-0300 (Horário Padrão de Brasília)",
+      "product_id": "02",
+      "nome": "Abóbora",
+      "categ": "Legume",
+      "foto": "../../../../../assets/img/products/abobora.png",
+      "quant": 75,
+      "tipo": "compra",
+      "data": "03/04/2021",
+      "valor": 50
+    },
+    {
+      "id": "05-Sat Apr 03 2021 19:05:00 GMT-0300 (Horário Padrão de Brasília)",
+      "product_id": "05",
+      "nome": "Batata",
+      "categ": "Legume",
+      "foto": "../../../../../assets/img/products/batata-inglesa.png",
+      "quant": 20,
+      "tipo": "compra",
+      "data": "03/04/2021",
+      "valor": 2
+    },
+    {
+      "id": "02-Sat Apr 03 2021 19:05:08 GMT-0300 (Horário Padrão de Brasília)",
+      "product_id": "02",
+      "nome": "Abóbora",
+      "categ": "Legume",
+      "foto": "../../../../../assets/img/products/abobora.png",
+      "quant": 75,
+      "tipo": "compra",
+      "data": "03/04/2021",
+      "valor": 20
+    },
+    {
+      "id": "07-Sat Apr 03 2021 19:05:21 GMT-0300 (Horário Padrão de Brasília)",
+      "product_id": "07",
+      "nome": "Cebola",
+      "categ": "Legume",
+      "foto": "../../../../../assets/img/products/cebola.png",
+      "quant": 7,
+      "tipo": "compra",
+      "data": "03/04/2021",
+      "valor": 30
+    },
+    {
+      "id": "02-Sat Apr 03 2021 19:05:32 GMT-0300 (Horário Padrão de Brasília)",
+      "product_id": "02",
+      "nome": "Abóbora",
+      "categ": "Legume",
+      "foto": "../../../../../assets/img/products/abobora.png",
+      "quant": 1,
+      "tipo": "venda",
+      "data": "03/04/2021",
+      "valor": 2
+    },
+    {
+      "id": "02-Sat Apr 03 2021 19:05:56 GMT-0300 (Horário Padrão de Brasília)",
+      "product_id": "02",
+      "nome": "Abóbora",
+      "categ": "Legume",
+      "foto": "../../../../../assets/img/products/abobora.png",
+      "quant": 50,
+      "tipo": "compra",
+      "data": "03/04/2021",
+      "valor": 33
+    },
+    {
+      "id": "19-Sat Apr 03 2021 19:06:16 GMT-0300 (Horário Padrão de Brasília)",
+      "product_id": "19",
+      "nome": "Rúcula",
+      "categ": "Verdura",
+      "foto": "../../../../../assets/img/products/rucula.png",
+      "quant": 21,
+      "tipo": "compra",
+      "data": "03/04/2021",
+      "valor": 2
     }
   ]
 }
